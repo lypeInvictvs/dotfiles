@@ -1,0 +1,371 @@
+[38;5;238m───────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+       [38;5;238m│ [0mFile: [1mconfig.kdl[0m
+[38;5;238m───────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+[38;5;238m   1[0m   [38;5;238m│[0m [38;5;231m// If you'd like to override the default keybindings completely, be sure to change "keybinds" to "keybinds clear-defa[0m
+[38;5;238m    [0m   [38;5;238m│[0m [38;5;231mults=true"[0m
+[38;5;238m   2[0m   [38;5;238m│[0m [38;5;231mkeybinds {[0m
+[38;5;238m   3[0m   [38;5;238m│[0m [38;5;231m    normal {[0m
+[38;5;238m   4[0m   [38;5;238m│[0m [38;5;231m        // uncomment this and adjust key if using copy_on_select=false[0m
+[38;5;238m   5[0m   [38;5;238m│[0m [38;5;231m        // bind "Alt c" { Copy; }[0m
+[38;5;238m   6[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m   7[0m   [38;5;238m│[0m [38;5;231m    locked {[0m
+[38;5;238m   8[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl g" { SwitchToMode "Normal"; }[0m
+[38;5;238m   9[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m  10[0m   [38;5;238m│[0m [38;5;231m    resize {[0m
+[38;5;238m  11[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl n" { SwitchToMode "Normal"; }[0m
+[38;5;238m  12[0m   [38;5;238m│[0m [38;5;231m        bind "h" "Left" { Resize "Increase Left"; }[0m
+[38;5;238m  13[0m   [38;5;238m│[0m [38;5;231m        bind "j" "Down" { Resize "Increase Down"; }[0m
+[38;5;238m  14[0m   [38;5;238m│[0m [38;5;231m        bind "k" "Up" { Resize "Increase Up"; }[0m
+[38;5;238m  15[0m   [38;5;238m│[0m [38;5;231m        bind "l" "Right" { Resize "Increase Right"; }[0m
+[38;5;238m  16[0m   [38;5;238m│[0m [38;5;231m        bind "H" { Resize "Decrease Left"; }[0m
+[38;5;238m  17[0m   [38;5;238m│[0m [38;5;231m        bind "J" { Resize "Decrease Down"; }[0m
+[38;5;238m  18[0m   [38;5;238m│[0m [38;5;231m        bind "K" { Resize "Decrease Up"; }[0m
+[38;5;238m  19[0m   [38;5;238m│[0m [38;5;231m        bind "L" { Resize "Decrease Right"; }[0m
+[38;5;238m  20[0m   [38;5;238m│[0m [38;5;231m        bind "=" "+" { Resize "Increase"; }[0m
+[38;5;238m  21[0m   [38;5;238m│[0m [38;5;231m        bind "-" { Resize "Decrease"; }[0m
+[38;5;238m  22[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m  23[0m   [38;5;238m│[0m [38;5;231m    pane {[0m
+[38;5;238m  24[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl p" { SwitchToMode "Normal"; }[0m
+[38;5;238m  25[0m   [38;5;238m│[0m [38;5;231m        bind "h" "Left" { MoveFocus "Left"; }[0m
+[38;5;238m  26[0m   [38;5;238m│[0m [38;5;231m        bind "l" "Right" { MoveFocus "Right"; }[0m
+[38;5;238m  27[0m   [38;5;238m│[0m [38;5;231m        bind "j" "Down" { MoveFocus "Down"; }[0m
+[38;5;238m  28[0m   [38;5;238m│[0m [38;5;231m        bind "k" "Up" { MoveFocus "Up"; }[0m
+[38;5;238m  29[0m   [38;5;238m│[0m [38;5;231m        bind "p" { SwitchFocus; }[0m
+[38;5;238m  30[0m   [38;5;238m│[0m [38;5;231m        bind "n" { NewPane; SwitchToMode "Normal"; }[0m
+[38;5;238m  31[0m   [38;5;238m│[0m [38;5;231m        bind "d" { NewPane "Down"; SwitchToMode "Normal"; }[0m
+[38;5;238m  32[0m   [38;5;238m│[0m [38;5;231m        bind "r" { NewPane "Right"; SwitchToMode "Normal"; }[0m
+[38;5;238m  33[0m   [38;5;238m│[0m [38;5;231m        bind "x" { CloseFocus; SwitchToMode "Normal"; }[0m
+[38;5;238m  34[0m   [38;5;238m│[0m [38;5;231m        bind "f" { ToggleFocusFullscreen; SwitchToMode "Normal"; }[0m
+[38;5;238m  35[0m   [38;5;238m│[0m [38;5;231m        bind "z" { TogglePaneFrames; SwitchToMode "Normal"; }[0m
+[38;5;238m  36[0m   [38;5;238m│[0m [38;5;231m        bind "w" { ToggleFloatingPanes; SwitchToMode "Normal"; }[0m
+[38;5;238m  37[0m   [38;5;238m│[0m [38;5;231m        bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "Normal"; }[0m
+[38;5;238m  38[0m   [38;5;238m│[0m [38;5;231m        bind "c" { SwitchToMode "RenamePane"; PaneNameInput 0;}[0m
+[38;5;238m  39[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m  40[0m   [38;5;238m│[0m [38;5;231m    move {[0m
+[38;5;238m  41[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl h" { SwitchToMode "Normal"; }[0m
+[38;5;238m  42[0m   [38;5;238m│[0m [38;5;231m        bind "n" "Tab" { MovePane; }[0m
+[38;5;238m  43[0m   [38;5;238m│[0m [38;5;231m        bind "p" { MovePaneBackwards; }[0m
+[38;5;238m  44[0m   [38;5;238m│[0m [38;5;231m        bind "h" "Left" { MovePane "Left"; }[0m
+[38;5;238m  45[0m   [38;5;238m│[0m [38;5;231m        bind "j" "Down" { MovePane "Down"; }[0m
+[38;5;238m  46[0m   [38;5;238m│[0m [38;5;231m        bind "k" "Up" { MovePane "Up"; }[0m
+[38;5;238m  47[0m   [38;5;238m│[0m [38;5;231m        bind "l" "Right" { MovePane "Right"; }[0m
+[38;5;238m  48[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m  49[0m   [38;5;238m│[0m [38;5;231m    tab {[0m
+[38;5;238m  50[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl t" { SwitchToMode "Normal"; }[0m
+[38;5;238m  51[0m   [38;5;238m│[0m [38;5;231m        bind "r" { SwitchToMode "RenameTab"; TabNameInput 0; }[0m
+[38;5;238m  52[0m   [38;5;238m│[0m [38;5;231m        bind "h" "Left" "Up" "k" { GoToPreviousTab; }[0m
+[38;5;238m  53[0m   [38;5;238m│[0m [38;5;231m        bind "l" "Right" "Down" "j" { GoToNextTab; }[0m
+[38;5;238m  54[0m   [38;5;238m│[0m [38;5;231m        bind "n" { NewTab; SwitchToMode "Normal"; }[0m
+[38;5;238m  55[0m   [38;5;238m│[0m [38;5;231m        bind "x" { CloseTab; SwitchToMode "Normal"; }[0m
+[38;5;238m  56[0m   [38;5;238m│[0m [38;5;231m        bind "s" { ToggleActiveSyncTab; SwitchToMode "Normal"; }[0m
+[38;5;238m  57[0m   [38;5;238m│[0m [38;5;231m        bind "b" { BreakPane; SwitchToMode "Normal"; }[0m
+[38;5;238m  58[0m   [38;5;238m│[0m [38;5;231m        bind "]" { BreakPaneRight; SwitchToMode "Normal"; }[0m
+[38;5;238m  59[0m   [38;5;238m│[0m [38;5;231m        bind "[" { BreakPaneLeft; SwitchToMode "Normal"; }[0m
+[38;5;238m  60[0m   [38;5;238m│[0m [38;5;231m        bind "1" { GoToTab 1; SwitchToMode "Normal"; }[0m
+[38;5;238m  61[0m   [38;5;238m│[0m [38;5;231m        bind "2" { GoToTab 2; SwitchToMode "Normal"; }[0m
+[38;5;238m  62[0m   [38;5;238m│[0m [38;5;231m        bind "3" { GoToTab 3; SwitchToMode "Normal"; }[0m
+[38;5;238m  63[0m   [38;5;238m│[0m [38;5;231m        bind "4" { GoToTab 4; SwitchToMode "Normal"; }[0m
+[38;5;238m  64[0m   [38;5;238m│[0m [38;5;231m        bind "5" { GoToTab 5; SwitchToMode "Normal"; }[0m
+[38;5;238m  65[0m   [38;5;238m│[0m [38;5;231m        bind "6" { GoToTab 6; SwitchToMode "Normal"; }[0m
+[38;5;238m  66[0m   [38;5;238m│[0m [38;5;231m        bind "7" { GoToTab 7; SwitchToMode "Normal"; }[0m
+[38;5;238m  67[0m   [38;5;238m│[0m [38;5;231m        bind "8" { GoToTab 8; SwitchToMode "Normal"; }[0m
+[38;5;238m  68[0m   [38;5;238m│[0m [38;5;231m        bind "9" { GoToTab 9; SwitchToMode "Normal"; }[0m
+[38;5;238m  69[0m   [38;5;238m│[0m [38;5;231m        bind "Tab" { ToggleTab; }[0m
+[38;5;238m  70[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m  71[0m   [38;5;238m│[0m [38;5;231m    scroll {[0m
+[38;5;238m  72[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl s" { SwitchToMode "Normal"; }[0m
+[38;5;238m  73[0m   [38;5;238m│[0m [38;5;231m        bind "e" { EditScrollback; SwitchToMode "Normal"; }[0m
+[38;5;238m  74[0m   [38;5;238m│[0m [38;5;231m        bind "s" { SwitchToMode "EnterSearch"; SearchInput 0; }[0m
+[38;5;238m  75[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }[0m
+[38;5;238m  76[0m   [38;5;238m│[0m [38;5;231m        bind "j" "Down" { ScrollDown; }[0m
+[38;5;238m  77[0m   [38;5;238m│[0m [38;5;231m        bind "k" "Up" { ScrollUp; }[0m
+[38;5;238m  78[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }[0m
+[38;5;238m  79[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }[0m
+[38;5;238m  80[0m   [38;5;238m│[0m [38;5;231m        bind "d" { HalfPageScrollDown; }[0m
+[38;5;238m  81[0m   [38;5;238m│[0m [38;5;231m        bind "u" { HalfPageScrollUp; }[0m
+[38;5;238m  82[0m   [38;5;238m│[0m [38;5;231m        // uncomment this and adjust key if using copy_on_select=false[0m
+[38;5;238m  83[0m   [38;5;238m│[0m [38;5;231m        // bind "Alt c" { Copy; }[0m
+[38;5;238m  84[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m  85[0m   [38;5;238m│[0m [38;5;231m    search {[0m
+[38;5;238m  86[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl s" { SwitchToMode "Normal"; }[0m
+[38;5;238m  87[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl c" { ScrollToBottom; SwitchToMode "Normal"; }[0m
+[38;5;238m  88[0m   [38;5;238m│[0m [38;5;231m        bind "j" "Down" { ScrollDown; }[0m
+[38;5;238m  89[0m   [38;5;238m│[0m [38;5;231m        bind "k" "Up" { ScrollUp; }[0m
+[38;5;238m  90[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl f" "PageDown" "Right" "l" { PageScrollDown; }[0m
+[38;5;238m  91[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl b" "PageUp" "Left" "h" { PageScrollUp; }[0m
+[38;5;238m  92[0m   [38;5;238m│[0m [38;5;231m        bind "d" { HalfPageScrollDown; }[0m
+[38;5;238m  93[0m   [38;5;238m│[0m [38;5;231m        bind "u" { HalfPageScrollUp; }[0m
+[38;5;238m  94[0m   [38;5;238m│[0m [38;5;231m        bind "n" { Search "down"; }[0m
+[38;5;238m  95[0m   [38;5;238m│[0m [38;5;231m        bind "p" { Search "up"; }[0m
+[38;5;238m  96[0m   [38;5;238m│[0m [38;5;231m        bind "c" { SearchToggleOption "CaseSensitivity"; }[0m
+[38;5;238m  97[0m   [38;5;238m│[0m [38;5;231m        bind "w" { SearchToggleOption "Wrap"; }[0m
+[38;5;238m  98[0m   [38;5;238m│[0m [38;5;231m        bind "o" { SearchToggleOption "WholeWord"; }[0m
+[38;5;238m  99[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 100[0m   [38;5;238m│[0m [38;5;231m    entersearch {[0m
+[38;5;238m 101[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl c" "Esc" { SwitchToMode "Scroll"; }[0m
+[38;5;238m 102[0m   [38;5;238m│[0m [38;5;231m        bind "Enter" { SwitchToMode "Search"; }[0m
+[38;5;238m 103[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 104[0m   [38;5;238m│[0m [38;5;231m    renametab {[0m
+[38;5;238m 105[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl c" { SwitchToMode "Normal"; }[0m
+[38;5;238m 106[0m   [38;5;238m│[0m [38;5;231m        bind "Esc" { UndoRenameTab; SwitchToMode "Tab"; }[0m
+[38;5;238m 107[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 108[0m   [38;5;238m│[0m [38;5;231m    renamepane {[0m
+[38;5;238m 109[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl c" { SwitchToMode "Normal"; }[0m
+[38;5;238m 110[0m   [38;5;238m│[0m [38;5;231m        bind "Esc" { UndoRenamePane; SwitchToMode "Pane"; }[0m
+[38;5;238m 111[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 112[0m   [38;5;238m│[0m [38;5;231m    session {[0m
+[38;5;238m 113[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl o" { SwitchToMode "Normal"; }[0m
+[38;5;238m 114[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl s" { SwitchToMode "Scroll"; }[0m
+[38;5;238m 115[0m   [38;5;238m│[0m [38;5;231m        bind "d" { Detach; }[0m
+[38;5;238m 116[0m   [38;5;238m│[0m [38;5;231m        bind "w" {[0m
+[38;5;238m 117[0m   [38;5;238m│[0m [38;5;231m            LaunchOrFocusPlugin "session-manager" {[0m
+[38;5;238m 118[0m   [38;5;238m│[0m [38;5;231m                floating true[0m
+[38;5;238m 119[0m   [38;5;238m│[0m [38;5;231m                move_to_focused_tab true[0m
+[38;5;238m 120[0m   [38;5;238m│[0m [38;5;231m            };[0m
+[38;5;238m 121[0m   [38;5;238m│[0m [38;5;231m            SwitchToMode "Normal"[0m
+[38;5;238m 122[0m   [38;5;238m│[0m [38;5;231m        }[0m
+[38;5;238m 123[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 124[0m   [38;5;238m│[0m [38;5;231m//    tmux {[0m
+[38;5;238m 125[0m   [38;5;238m│[0m [38;5;231m//       bind "[" { SwitchToMode "Scroll"; }[0m
+[38;5;238m 126[0m   [38;5;238m│[0m [38;5;231m//        bind "Ctrl b" { Write 2; SwitchToMode "Normal"; }[0m
+[38;5;238m 127[0m   [38;5;238m│[0m [38;5;231m//        bind "\"" { NewPane "Down"; SwitchToMode "Normal"; }[0m
+[38;5;238m 128[0m   [38;5;238m│[0m [38;5;231m//        bind "%" { NewPane "Right"; SwitchToMode "Normal"; }[0m
+[38;5;238m 129[0m   [38;5;238m│[0m [38;5;231m//        bind "z" { ToggleFocusFullscreen; SwitchToMode "Normal"; }[0m
+[38;5;238m 130[0m   [38;5;238m│[0m [38;5;231m//        bind "c" { NewTab; SwitchToMode "Normal"; }[0m
+[38;5;238m 131[0m   [38;5;238m│[0m [38;5;231m//        bind "," { SwitchToMode "RenameTab"; }[0m
+[38;5;238m 132[0m   [38;5;238m│[0m [38;5;231m//        bind "p" { GoToPreviousTab; SwitchToMode "Normal"; }[0m
+[38;5;238m 133[0m   [38;5;238m│[0m [38;5;231m//        bind "n" { GoToNextTab; SwitchToMode "Normal"; }[0m
+[38;5;238m 134[0m   [38;5;238m│[0m [38;5;231m//        bind "Left" { MoveFocus "Left"; SwitchToMode "Normal"; }[0m
+[38;5;238m 135[0m   [38;5;238m│[0m [38;5;231m//        bind "Right" { MoveFocus "Right"; SwitchToMode "Normal"; }[0m
+[38;5;238m 136[0m   [38;5;238m│[0m [38;5;231m//        bind "Down" { MoveFocus "Down"; SwitchToMode "Normal"; }[0m
+[38;5;238m 137[0m   [38;5;238m│[0m [38;5;231m//        bind "Up" { MoveFocus "Up"; SwitchToMode "Normal"; }[0m
+[38;5;238m 138[0m   [38;5;238m│[0m [38;5;231m//        bind "h" { MoveFocus "Left"; SwitchToMode "Normal"; }[0m
+[38;5;238m 139[0m   [38;5;238m│[0m [38;5;231m//        bind "l" { MoveFocus "Right"; SwitchToMode "Normal"; }[0m
+[38;5;238m 140[0m   [38;5;238m│[0m [38;5;231m//        bind "j" { MoveFocus "Down"; SwitchToMode "Normal"; }[0m
+[38;5;238m 141[0m   [38;5;238m│[0m [38;5;231m//        bind "k" { MoveFocus "Up"; SwitchToMode "Normal"; }[0m
+[38;5;238m 142[0m   [38;5;238m│[0m [38;5;231m//        bind "o" { FocusNextPane; }[0m
+[38;5;238m 143[0m   [38;5;238m│[0m [38;5;231m//        bind "d" { Detach; }[0m
+[38;5;238m 144[0m   [38;5;238m│[0m [38;5;231m//        bind "Space" { NextSwapLayout; }[0m
+[38;5;238m 145[0m   [38;5;238m│[0m [38;5;231m//        bind "x" { CloseFocus; SwitchToMode "Normal"; }[0m
+[38;5;238m 146[0m   [38;5;238m│[0m [38;5;231m//    }[0m
+[38;5;238m 147[0m   [38;5;238m│[0m [38;5;231m    shared_except "locked" {[0m
+[38;5;238m 148[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl g" { SwitchToMode "Locked"; }[0m
+[38;5;238m 149[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl q" { Quit; }[0m
+[38;5;238m 150[0m   [38;5;238m│[0m [38;5;231m        bind "Alt n" { NewPane; }[0m
+[38;5;238m 151[0m   [38;5;238m│[0m [38;5;231m        bind "Alt i" { MoveTab "Left"; }[0m
+[38;5;238m 152[0m   [38;5;238m│[0m [38;5;231m        bind "Alt o" { MoveTab "Right"; }[0m
+[38;5;238m 153[0m   [38;5;238m│[0m [38;5;231m        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }[0m
+[38;5;238m 154[0m   [38;5;238m│[0m [38;5;231m        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }[0m
+[38;5;238m 155[0m   [38;5;238m│[0m [38;5;231m        bind "Alt j" "Alt Down" { MoveFocus "Down"; }[0m
+[38;5;238m 156[0m   [38;5;238m│[0m [38;5;231m        bind "Alt k" "Alt Up" { MoveFocus "Up"; }[0m
+[38;5;238m 157[0m   [38;5;238m│[0m [38;5;231m        bind "Alt =" "Alt +" { Resize "Increase"; }[0m
+[38;5;238m 158[0m   [38;5;238m│[0m [38;5;231m        bind "Alt -" { Resize "Decrease"; }[0m
+[38;5;238m 159[0m   [38;5;238m│[0m [38;5;231m        bind "Alt [" { PreviousSwapLayout; }[0m
+[38;5;238m 160[0m   [38;5;238m│[0m [38;5;231m        bind "Alt ]" { NextSwapLayout; }[0m
+[38;5;238m 161[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 162[0m   [38;5;238m│[0m [38;5;231m    shared_except "normal" "locked" {[0m
+[38;5;238m 163[0m   [38;5;238m│[0m [38;5;231m        bind "Enter" "Esc" { SwitchToMode "Normal"; }[0m
+[38;5;238m 164[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 165[0m   [38;5;238m│[0m [38;5;231m    shared_except "pane" "locked" {[0m
+[38;5;238m 166[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl p" { SwitchToMode "Pane"; }[0m
+[38;5;238m 167[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 168[0m   [38;5;238m│[0m [38;5;231m    shared_except "resize" "locked" {[0m
+[38;5;238m 169[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl n" { SwitchToMode "Resize"; }[0m
+[38;5;238m 170[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 171[0m   [38;5;238m│[0m [38;5;231m    shared_except "scroll" "locked" {[0m
+[38;5;238m 172[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl s" { SwitchToMode "Scroll"; }[0m
+[38;5;238m 173[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 174[0m   [38;5;238m│[0m [38;5;231m    shared_except "session" "locked" {[0m
+[38;5;238m 175[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl o" { SwitchToMode "Session"; }[0m
+[38;5;238m 176[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 177[0m   [38;5;238m│[0m [38;5;231m    shared_except "tab" "locked" {[0m
+[38;5;238m 178[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl t" { SwitchToMode "Tab"; }[0m
+[38;5;238m 179[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 180[0m   [38;5;238m│[0m [38;5;231m    shared_except "move" "locked" {[0m
+[38;5;238m 181[0m   [38;5;238m│[0m [38;5;231m        bind "Ctrl h" { SwitchToMode "Move"; }[0m
+[38;5;238m 182[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 183[0m   [38;5;238m│[0m [38;5;231m//    shared_except "tmux" "locked" {[0m
+[38;5;238m 184[0m   [38;5;238m│[0m [38;5;231m//        bind "Ctrl b" { SwitchToMode "Tmux"; }[0m
+[38;5;238m 185[0m   [38;5;238m│[0m [38;5;231m//   }[0m
+[38;5;238m 186[0m   [38;5;238m│[0m [38;5;231m}[0m
+[38;5;238m 187[0m   [38;5;238m│[0m 
+[38;5;238m 188[0m   [38;5;238m│[0m [38;5;231mplugins {[0m
+[38;5;238m 189[0m   [38;5;238m│[0m [38;5;231m    tab-bar location="zellij:tab-bar"[0m
+[38;5;238m 190[0m   [38;5;238m│[0m [38;5;231m    status-bar location="zellij:status-bar"[0m
+[38;5;238m 191[0m   [38;5;238m│[0m [38;5;231m    strider location="zellij:strider"[0m
+[38;5;238m 192[0m   [38;5;238m│[0m [38;5;231m    compact-bar location="zellij:compact-bar"[0m
+[38;5;238m 193[0m   [38;5;238m│[0m [38;5;231m    session-manager location="zellij:session-manager"[0m
+[38;5;238m 194[0m   [38;5;238m│[0m [38;5;231m    welcome-screen location="zellij:session-manager" {[0m
+[38;5;238m 195[0m   [38;5;238m│[0m [38;5;231m        welcome_screen true[0m
+[38;5;238m 196[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 197[0m   [38;5;238m│[0m [38;5;231m    filepicker location="zellij:strider" {[0m
+[38;5;238m 198[0m   [38;5;238m│[0m [38;5;231m        cwd "/"[0m
+[38;5;238m 199[0m   [38;5;238m│[0m [38;5;231m    }[0m
+[38;5;238m 200[0m   [38;5;238m│[0m [38;5;231m}[0m
+[38;5;238m 201[0m   [38;5;238m│[0m 
+[38;5;238m 202[0m   [38;5;238m│[0m [38;5;231m// Choose what to do when zellij receives SIGTERM, SIGINT, SIGQUIT or SIGHUP[0m
+[38;5;238m 203[0m   [38;5;238m│[0m [38;5;231m// eg. when terminal window with an active zellij session is closed[0m
+[38;5;238m 204[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 205[0m   [38;5;238m│[0m [38;5;231m//   - detach (Default)[0m
+[38;5;238m 206[0m   [38;5;238m│[0m [38;5;231m//   - quit[0m
+[38;5;238m 207[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 208[0m   [38;5;238m│[0m [38;5;231m// on_force_close "quit"[0m
+[38;5;238m 209[0m   [38;5;238m│[0m 
+[38;5;238m 210[0m   [38;5;238m│[0m [38;5;231m//  Send a request for a simplified ui (without arrow fonts) to plugins[0m
+[38;5;238m 211[0m   [38;5;238m│[0m [38;5;231m//  Options:[0m
+[38;5;238m 212[0m   [38;5;238m│[0m [38;5;231m//    - true[0m
+[38;5;238m 213[0m   [38;5;238m│[0m [38;5;231m//    - false (Default)[0m
+[38;5;238m 214[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 215[0m   [38;5;238m│[0m [38;5;231m// simplified_ui true[0m
+[38;5;238m 216[0m   [38;5;238m│[0m 
+[38;5;238m 217[0m   [38;5;238m│[0m [38;5;231m// Choose the path to the default shell that zellij will use for opening new panes[0m
+[38;5;238m 218[0m   [38;5;238m│[0m [38;5;231m// Default: $SHELL[0m
+[38;5;238m 219[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 220[0m   [38;5;238m│[0m [38;5;231m// default_shell "fish"[0m
+[38;5;238m 221[0m   [38;5;238m│[0m 
+[38;5;238m 222[0m   [38;5;238m│[0m [38;5;231m// Choose the path to override cwd that zellij will use for opening new panes[0m
+[38;5;238m 223[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 224[0m   [38;5;238m│[0m [38;5;231m// default_cwd ""[0m
+[38;5;238m 225[0m   [38;5;238m│[0m 
+[38;5;238m 226[0m   [38;5;238m│[0m [38;5;231m// Toggle between having pane frames around the panes[0m
+[38;5;238m 227[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 228[0m   [38;5;238m│[0m [38;5;231m//   - true (default)[0m
+[38;5;238m 229[0m   [38;5;238m│[0m [38;5;231m//   - false[0m
+[38;5;238m 230[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 231[0m   [38;5;238m│[0m [38;5;231m// pane_frames true[0m
+[38;5;238m 232[0m   [38;5;238m│[0m 
+[38;5;238m 233[0m   [38;5;238m│[0m [38;5;231m// Toggle between having Zellij lay out panes according to a predefined set of layouts whenever possible[0m
+[38;5;238m 234[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 235[0m   [38;5;238m│[0m [38;5;231m//   - true (default)[0m
+[38;5;238m 236[0m   [38;5;238m│[0m [38;5;231m//   - false[0m
+[38;5;238m 237[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 238[0m   [38;5;238m│[0m [38;5;231m// auto_layout true[0m
+[38;5;238m 239[0m   [38;5;238m│[0m 
+[38;5;238m 240[0m   [38;5;238m│[0m [38;5;231m// Whether sessions should be serialized to the cache folder (including their tabs/panes, cwds and running commands) [0m
+[38;5;238m    [0m   [38;5;238m│[0m [38;5;231mso that they can later be resurrected[0m
+[38;5;238m 241[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 242[0m   [38;5;238m│[0m [38;5;231m//   - true (default)[0m
+[38;5;238m 243[0m   [38;5;238m│[0m [38;5;231m//   - false[0m
+[38;5;238m 244[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 245[0m   [38;5;238m│[0m [38;5;231m// session_serialization false[0m
+[38;5;238m 246[0m   [38;5;238m│[0m 
+[38;5;238m 247[0m   [38;5;238m│[0m [38;5;231m// Whether pane viewports are serialized along with the session, default is false[0m
+[38;5;238m 248[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 249[0m   [38;5;238m│[0m [38;5;231m//   - true[0m
+[38;5;238m 250[0m   [38;5;238m│[0m [38;5;231m//   - false (default)[0m
+[38;5;238m 251[0m   [38;5;238m│[0m [38;5;231m// serialize_pane_viewport true[0m
+[38;5;238m 252[0m   [38;5;238m│[0m 
+[38;5;238m 253[0m   [38;5;238m│[0m [38;5;231m// Scrollback lines to serialize along with the pane viewport when serializing sessions, 0[0m
+[38;5;238m 254[0m   [38;5;238m│[0m [38;5;231m// defaults to the scrollback size. If this number is higher than the scrollback size, it will[0m
+[38;5;238m 255[0m   [38;5;238m│[0m [38;5;231m// also default to the scrollback size. This does nothing if `serialize_pane_viewport` is not true.[0m
+[38;5;238m 256[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 257[0m   [38;5;238m│[0m [38;5;231m// scrollback_lines_to_serialize 10000[0m
+[38;5;238m 258[0m   [38;5;238m│[0m 
+[38;5;238m 259[0m   [38;5;238m│[0m [38;5;231m// Define color themes for Zellij[0m
+[38;5;238m 260[0m   [38;5;238m│[0m [38;5;231m// For more examples, see: https://github.com/zellij-org/zellij/tree/main/example/themes[0m
+[38;5;238m 261[0m   [38;5;238m│[0m [38;5;231m// Once these themes are defined, one of them should to be selected in the "theme" section of this file[0m
+[38;5;238m 262[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 263[0m   [38;5;238m│[0m [38;5;231m// themes {[0m
+[38;5;238m 264[0m   [38;5;238m│[0m [38;5;231m//     dracula {[0m
+[38;5;238m 265[0m   [38;5;238m│[0m [38;5;231m//         fg 248 248 242[0m
+[38;5;238m 266[0m   [38;5;238m│[0m [38;5;231m//         bg 40 42 54[0m
+[38;5;238m 267[0m   [38;5;238m│[0m [38;5;231m//         red 255 85 85[0m
+[38;5;238m 268[0m   [38;5;238m│[0m [38;5;231m//         green 80 250 123[0m
+[38;5;238m 269[0m   [38;5;238m│[0m [38;5;231m//         yellow 241 250 140[0m
+[38;5;238m 270[0m   [38;5;238m│[0m [38;5;231m//         blue 98 114 164[0m
+[38;5;238m 271[0m   [38;5;238m│[0m [38;5;231m//         magenta 255 121 198[0m
+[38;5;238m 272[0m   [38;5;238m│[0m [38;5;231m//         orange 255 184 108[0m
+[38;5;238m 273[0m   [38;5;238m│[0m [38;5;231m//         cyan 139 233 253[0m
+[38;5;238m 274[0m   [38;5;238m│[0m [38;5;231m//         black 0 0 0[0m
+[38;5;238m 275[0m   [38;5;238m│[0m [38;5;231m//         white 255 255 255[0m
+[38;5;238m 276[0m   [38;5;238m│[0m [38;5;231m//     }[0m
+[38;5;238m 277[0m   [38;5;238m│[0m [38;5;231m// }[0m
+[38;5;238m 278[0m   [38;5;238m│[0m 
+[38;5;238m 279[0m   [38;5;238m│[0m [38;5;231m// Choose the theme that is specified in the themes section.[0m
+[38;5;238m 280[0m   [38;5;238m│[0m [38;5;231m// Default: default[0m
+[38;5;238m 281[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 282[0m   [38;5;238m│[0m [38;5;231mtheme "default"[0m
+[38;5;238m 283[0m   [38;5;238m│[0m 
+[38;5;238m 284[0m   [38;5;238m│[0m [38;5;231m// The name of the default layout to load on startup[0m
+[38;5;238m 285[0m   [38;5;238m│[0m [38;5;231m// Default: "default"[0m
+[38;5;238m 286[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 287[0m   [38;5;238m│[0m [38;5;231m// default_layout "compact"[0m
+[38;5;238m 288[0m   [38;5;238m│[0m 
+[38;5;238m 289[0m   [38;5;238m│[0m [38;5;231m// Choose the mode that zellij uses when starting up.[0m
+[38;5;238m 290[0m   [38;5;238m│[0m [38;5;231m// Default: normal[0m
+[38;5;238m 291[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 292[0m   [38;5;238m│[0m [38;5;231m// default_mode "locked"[0m
+[38;5;238m 293[0m   [38;5;238m│[0m 
+[38;5;238m 294[0m   [38;5;238m│[0m [38;5;231m// Toggle enabling the mouse mode.[0m
+[38;5;238m 295[0m   [38;5;238m│[0m [38;5;231m// On certain configurations, or terminals this could[0m
+[38;5;238m 296[0m   [38;5;238m│[0m [38;5;231m// potentially interfere with copying text.[0m
+[38;5;238m 297[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 298[0m   [38;5;238m│[0m [38;5;231m//   - true (default)[0m
+[38;5;238m 299[0m   [38;5;238m│[0m [38;5;231m//   - false[0m
+[38;5;238m 300[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 301[0m   [38;5;238m│[0m [38;5;231m// mouse_mode false[0m
+[38;5;238m 302[0m   [38;5;238m│[0m 
+[38;5;238m 303[0m   [38;5;238m│[0m [38;5;231m// Configure the scroll back buffer size[0m
+[38;5;238m 304[0m   [38;5;238m│[0m [38;5;231m// This is the number of lines zellij stores for each pane in the scroll back[0m
+[38;5;238m 305[0m   [38;5;238m│[0m [38;5;231m// buffer. Excess number of lines are discarded in a FIFO fashion.[0m
+[38;5;238m 306[0m   [38;5;238m│[0m [38;5;231m// Valid values: positive integers[0m
+[38;5;238m 307[0m   [38;5;238m│[0m [38;5;231m// Default value: 10000[0m
+[38;5;238m 308[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 309[0m   [38;5;238m│[0m [38;5;231m// scroll_buffer_size 10000[0m
+[38;5;238m 310[0m   [38;5;238m│[0m 
+[38;5;238m 311[0m   [38;5;238m│[0m [38;5;231m// Provide a command to execute when copying text. The text will be piped to[0m
+[38;5;238m 312[0m   [38;5;238m│[0m [38;5;231m// the stdin of the program to perform the copy. This can be used with[0m
+[38;5;238m 313[0m   [38;5;238m│[0m [38;5;231m// terminal emulators which do not support the OSC 52 ANSI control sequence[0m
+[38;5;238m 314[0m   [38;5;238m│[0m [38;5;231m// that will be used by default if this option is not set.[0m
+[38;5;238m 315[0m   [38;5;238m│[0m [38;5;231m// Examples:[0m
+[38;5;238m 316[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 317[0m   [38;5;238m│[0m [38;5;231m// copy_command "xclip -selection clipboard" // x11[0m
+[38;5;238m 318[0m   [38;5;238m│[0m [38;5;231m// copy_command "wl-copy"                    // wayland[0m
+[38;5;238m 319[0m   [38;5;238m│[0m [38;5;231m// copy_command "pbcopy"                     // osx[0m
+[38;5;238m 320[0m   [38;5;238m│[0m 
+[38;5;238m 321[0m   [38;5;238m│[0m [38;5;231m// Choose the destination for copied text[0m
+[38;5;238m 322[0m   [38;5;238m│[0m [38;5;231m// Allows using the primary selection buffer (on x11/wayland) instead of the system clipboard.[0m
+[38;5;238m 323[0m   [38;5;238m│[0m [38;5;231m// Does not apply when using copy_command.[0m
+[38;5;238m 324[0m   [38;5;238m│[0m [38;5;231m// Options:[0m
+[38;5;238m 325[0m   [38;5;238m│[0m [38;5;231m//   - system (default)[0m
+[38;5;238m 326[0m   [38;5;238m│[0m [38;5;231m//   - primary[0m
+[38;5;238m 327[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 328[0m   [38;5;238m│[0m [38;5;231m// copy_clipboard "primary"[0m
+[38;5;238m 329[0m   [38;5;238m│[0m 
+[38;5;238m 330[0m   [38;5;238m│[0m [38;5;231m// Enable or disable automatic copy (and clear) of selection when releasing mouse[0m
+[38;5;238m 331[0m   [38;5;238m│[0m [38;5;231m// Default: true[0m
+[38;5;238m 332[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 333[0m   [38;5;238m│[0m [38;5;231m// copy_on_select false[0m
+[38;5;238m 334[0m   [38;5;238m│[0m 
+[38;5;238m 335[0m   [38;5;238m│[0m [38;5;231m// Path to the default editor to use to edit pane scrollbuffer[0m
+[38;5;238m 336[0m   [38;5;238m│[0m [38;5;231m// Default: $EDITOR or $VISUAL[0m
+[38;5;238m 337[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 338[0m   [38;5;238m│[0m [38;5;231m// scrollback_editor "/usr/bin/vim"[0m
+[38;5;238m 339[0m   [38;5;238m│[0m 
+[38;5;238m 340[0m   [38;5;238m│[0m [38;5;231m// When attaching to an existing session with other users,[0m
+[38;5;238m 341[0m   [38;5;238m│[0m [38;5;231m// should the session be mirrored (true)[0m
+[38;5;238m 342[0m   [38;5;238m│[0m [38;5;231m// or should each user have their own cursor (false)[0m
+[38;5;238m 343[0m   [38;5;238m│[0m [38;5;231m// Default: false[0m
+[38;5;238m 344[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 345[0m   [38;5;238m│[0m [38;5;231m// mirror_session true[0m
+[38;5;238m 346[0m   [38;5;238m│[0m 
+[38;5;238m 347[0m   [38;5;238m│[0m [38;5;231m// The folder in which Zellij will look for layouts[0m
+[38;5;238m 348[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 349[0m   [38;5;238m│[0m [38;5;231m// layout_dir "/path/to/my/layout_dir"[0m
+[38;5;238m 350[0m   [38;5;238m│[0m 
+[38;5;238m 351[0m   [38;5;238m│[0m [38;5;231m// The folder in which Zellij will look for themes[0m
+[38;5;238m 352[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 353[0m   [38;5;238m│[0m [38;5;231mtheme_dir "/home/lype/.config/zellij/themes"[0m
+[38;5;238m 354[0m   [38;5;238m│[0m 
+[38;5;238m 355[0m   [38;5;238m│[0m [38;5;231m// Enable or disable the rendering of styled and colored underlines (undercurl).[0m
+[38;5;238m 356[0m   [38;5;238m│[0m [38;5;231m// May need to be disabled for certain unsupported terminals[0m
+[38;5;238m 357[0m   [38;5;238m│[0m [38;5;231m// Default: true[0m
+[38;5;238m 358[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 359[0m   [38;5;238m│[0m [38;5;231m// styled_underlines false[0m
+[38;5;238m 360[0m   [38;5;238m│[0m 
+[38;5;238m 361[0m   [38;5;238m│[0m [38;5;231m// Enable or disable writing of session metadata to disk (if disabled, other sessions might not know[0m
+[38;5;238m 362[0m   [38;5;238m│[0m [38;5;231m// metadata info on this session)[0m
+[38;5;238m 363[0m   [38;5;238m│[0m [38;5;231m// Default: false[0m
+[38;5;238m 364[0m   [38;5;238m│[0m [38;5;231m//[0m
+[38;5;238m 365[0m   [38;5;238m│[0m [38;5;231m// disable_session_metadata true[0m
+[38;5;238m───────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
